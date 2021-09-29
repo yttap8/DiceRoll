@@ -4,14 +4,22 @@
     <meta charset="utf-8">
     <title>Dice Roller</title>
     <script type="text/javascript">
-      function roll(){
-        document.getElementById("roll").innerHTML = Math.floor(Math.random()*6)+1;
-        var src = 
-        }
+      function getRandomImage(){
+        var randomImage = new Array();
+        randomImage [0] = "img/Dice1.png";
+        randomImage [1] = "img/Dice2.png";
+        randomImage [2] = "img/Dice3.png";
+        randomImage [3] = "img/Dice4.png";
+        randomImage [4] = "img/Dice5.png";
+        randomImage [5] = "img/Dice6.png";
+      var number = Math.floor(Math.random()*6);
+      return document.getElementById("roll").src = randomImage[number]
+      }
     </script>
   </head>
   <body>
-    <p id= "roll"></p>
-    <button onclick= "roll()">Roll</button>
+    <button onclick= "getRandomImage()" width = "100px" align = "center">Roll</button>
+    <br></br>
+    <img id="roll"></img>
   </body>
 </html>
