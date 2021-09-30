@@ -1,3 +1,13 @@
 body{
-  background-color: beige;
+  background-color: teal;
+  font-family: 'Caesar Dressing', cursive;
+}
+
+div{
+
+}
+
+img{
+  display: inline-block;
+  text-align: center;
 }

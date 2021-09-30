@@ -8,17 +8,26 @@ randomImage [4] = "img/Dice5.png";
 randomImage [5] = "img/Dice6.png";
 
 //Picks random number 0-5
-function randomNumber(){
+function randomNumber1(){
+  return Math.floor(Math.random()*6);
+}
+
+function randomNumber2(){
   return Math.floor(Math.random()*6);
 }
 
 //Displays array image corresponding to random number
-function getRandomImage(){
-  document.getElementById("roll").src = randomImage[randomNumber()]
-}
 
-function displaySeveral (num){
-  for (var i = 0, i<num, i++){
-
-  }
+function roll(){
+    var playerOne = randomNumber1();
+    var playerTwo = randomNumber2();
+    document.getElementById("p1").src = randomImage[playerOne]
+    document.getElementById("p2").src = randomImage[playerTwo]
+    if (playerOne > playerTwo){
+      document.getElementById("message").innerHTML = "Player 1 Wins!"
+    } else if (playerOne < playerTwo){
+      document.getElementById("message").innerHTML = "Player 2 Wins!"
+    } else{
+      document.getElementById("message").innerHTML = "It's a tie."
+    }
 }
