@@ -17,6 +17,7 @@ function getRandomImage(){
   document.getElementById("roll").src = randomImage[randomNumber()]
 }
 
+
 function displaySeveral (num){
   for (var i = 0, i<num, i++){
 
