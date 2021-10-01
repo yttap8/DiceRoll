@@ -1,13 +1,37 @@
 body{
   background-color: teal;
-  font-family: 'Caesar Dressing', cursive;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
 }
 
 div{
+  display: inline-block;
+  text-align: center;
+  width: auto;
+}
 
+h1{
+  font-size: 80px;
+  color: orange;
+}
+
+p{
+  font-size:30px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
 }
 
 img{
-  display: inline-block;
-  text-align: center;
+  width: 300px;
+}
+
+button{
+  width: 200px;
+  height: 60px;
+  border-radius: 25px;
+  font-size: 40px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  background-color: blue;
+  border: none;
 }
