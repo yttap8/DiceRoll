@@ -12,6 +12,7 @@ function randomNumber(num){
   return Math.floor(Math.random()*num);
 }
 
+//Different functions for dice sides
 function roll4(){
   roll(4);
 }
@@ -21,6 +22,7 @@ function roll5(){
 function roll6(){
   roll(6);
 }
+
 //Displays array image corresponding to random number for each players
 //Displays message depending on values of players 1 and 2
 function roll(num){
