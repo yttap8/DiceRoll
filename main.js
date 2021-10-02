@@ -7,20 +7,25 @@ randomImage [3] = "img/Dice4.png";
 randomImage [4] = "img/Dice5.png";
 randomImage [5] = "img/Dice6.png";
 
-//Picks random number 0-5
-function randomNumber1(){
-  return Math.floor(Math.random()*6);
+//Picks random number 0-5 for players 1 and 2
+function randomNumber(num){
+  return Math.floor(Math.random()*num);
 }
 
-function randomNumber2(){
-  return Math.floor(Math.random()*6);
+function roll4(){
+  roll(4);
 }
-
-//Displays array image corresponding to random number
-
-function roll(){
-    var playerOne = randomNumber1();
-    var playerTwo = randomNumber2();
+function roll5(){
+  roll(5);
+}
+function roll6(){
+  roll(6);
+}
+//Displays array image corresponding to random number for each players
+//Displays message depending on values of players 1 and 2
+function roll(num){
+    var playerOne = randomNumber(num);
+    var playerTwo = randomNumber(num);
     document.getElementById("p1").src = randomImage[playerOne]
     document.getElementById("p2").src = randomImage[playerTwo]
     if (playerOne > playerTwo){
